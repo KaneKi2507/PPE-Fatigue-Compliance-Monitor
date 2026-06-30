@@ -24,9 +24,9 @@ First run downloads a small (~4MB) face landmark model automatically.
 A window opens showing your webcam feed with live EAR/MAR numbers and an
 AWAKE/DROWSY status. Press `q` to quit.
 
-### Ignore this shit below (keeping it cuz idk kab kaam aajaaye):
+# Ignore this shit below (keeping it cuz idk kab kaam aajaaye):
 
-# PPE + Fatigue Compliance Monitor
+## PPE + Fatigue Compliance Monitor
 
 InnoVent-27 submission -- Industrial Heavy Machinery / Operator Safety &
 Human-Machine Interaction. Detects missing PPE (hard hat / safety vest)
