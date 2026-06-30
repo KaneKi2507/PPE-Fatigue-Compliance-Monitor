@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+
+# Local runtime data -- shouldn't be committed, regenerates automatically
+logs/*.csv
+*.task
+
+# Trained model weights -- usually too large for git; download separately
+models/*.pt
+models/*.onnx
+
+# OS junk
+.DS_Store

@@ -1,0 +1,23 @@
+# --- Step 1: Fatigue detection (done) ---
+mediapipe>=0.10.30
+opencv-python>=4.9
+# IMPORTANT: must be "opencv-python", NOT "opencv-python-headless".
+# The headless build has no GUI bindings at all, so cv2.imshow() (which
+# fatigue_detection.py and ppe_detection.py both use to show the live
+# camera window) will fail outright. headless is only for servers with no
+# display -- which is exactly why it's used to test the *logic* of this
+# project in a sandboxed dev environment, but it is the wrong package for
+# actually running the webcam scripts on your laptop.
+numpy>=1.26
+sounddevice>=0.5
+# Optional: used for the audio beep alert. If your machine has no working
+# audio device or the PortAudio system library isn't installed, this will
+# fail silently and the script falls back to a terminal bell instead of
+# crashing -- you don't need to do anything about this unless you want
+# the actual beep sound.
+
+# --- Step 2: PPE detection (notebook trains it, this runs it locally) ---
+ultralytics>=8.4
+
+# --- Step 3: Fusion + dashboard (coming next) ---
+# streamlit>=1.35
