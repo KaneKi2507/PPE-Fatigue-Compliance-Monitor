@@ -24,16 +24,16 @@ First run downloads a small (~4MB) face landmark model automatically.
 A window opens showing your webcam feed with live EAR/MAR numbers and an
 AWAKE/DROWSY status. Press `q` to quit.
 
-# Ignore this shit below (keeping it cuz idk kab kaam aajaaye):
+## Ignore this shit below (keeping it cuz idk kab kaam aajaaye):
 
-## PPE + Fatigue Compliance Monitor
+### PPE + Fatigue Compliance Monitor
 
 InnoVent-27 submission -- Industrial Heavy Machinery / Operator Safety &
 Human-Machine Interaction. Detects missing PPE (hard hat / safety vest)
 and operator drowsiness in real time from a single camera feed, designed
 to run fully offline at the edge.
 
-## Project status
+### Project status
 
 | Step | What | Status |
 |---|---|---|
@@ -44,7 +44,7 @@ to run fully offline at the edge.
 | 5 | Streamlit dashboard + logging | Not started |
 | 6 | Real-world testing, demo script, edge-deployment writeup | Not started |
 
-## Project structure
+### Project structure
 
 ```
 ppe-fatigue-monitor/
@@ -76,7 +76,7 @@ Google Colab (`Runtime > Change runtime type > T4 GPU` first), follow the
 cells in order, and download `best.pt` into `models/` when done. Full
 instructions are inside the notebook.
 
-## Gotchas found while building this (worth knowing, not just trivia)
+### Gotchas found while building this (worth knowing, not just trivia)
 
 - **Mediapipe's old `mp.solutions.face_mesh.FaceMesh` API is gone** in
   current mediapipe versions (0.10.x+) -- it raises
@@ -97,7 +97,7 @@ instructions are inside the notebook.
   isn't available. You don't need to fix anything for the script to keep
   working; this only matters if you actually want the beep sound itself.
 
-## Recommended dataset for Step 2
+### Recommended dataset for Step 2
 
 [Construction Site Safety](https://universe.roboflow.com/roboflow-universe-projects/construction-site-safety)
 on Roboflow Universe -- already in YOLOv8 format with `Hardhat`,
