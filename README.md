@@ -1,5 +1,4 @@
 # PPE + Fatigue Compliance Monitor
-
 ---
 
 ## What We Are Building
