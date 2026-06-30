@@ -1,5 +1,4 @@
 # PPE + Fatigue Compliance Monitor
-### Tata Technologies InnoVent-27 | Industrial Heavy Machinery | Operator Safety & Human-Machine Interaction
 
 ---
 
